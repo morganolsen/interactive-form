@@ -140,10 +140,8 @@ function updateActivites(checkbox)
  */
 function createTotalSpan()
 {
-    const span = document.createElement('span');
-    span.id = 'subtotal';
+    const span = createAppendElement(activitesFieldset, 'span', 'id', 'subtotal');
     span.style.display = 'none';
-    activitesFieldset.appendChild(span);
 }
 
 /**
